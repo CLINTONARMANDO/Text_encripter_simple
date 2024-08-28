@@ -7,22 +7,32 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <main>    
-        <div class="container">
-            
-            <input type="text" id="textUsuario" min="1" max="10" class="container__input">
-            <div class="chute container__botones">
-                <button onclick="encriptarTexto();" class="container__boton" id="Encriptar">Encriptar</button>
-                <button onclick="desencriptarTexto();" class="container__boton" id="Desencriptar">Desencriptar</button>
+    <main>
+        <section class="container">
+            <div class="encriptar">
+                <textarea
+                name="texto"
+                class="texto"
+                id="texto"
+                cols="30"
+                rows="10"
+                placeholder="Ingresa el texto aquí"
+                ></textarea>
+                <div class="chute botones">
+                    <button class="btn-encriptar" onclick="encriptarTexto();" class="boton" id="Encriptar">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="desencriptarTexto();" class="boton" id="Desencriptar">Desencriptar</button>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div id="textResult">
-                <p>
-
-                </p>
+            <div class="result">
+                <img src="img/muñeco.png" alt="" id="muñeco" />
+                <div id="textResult">
+                    <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                    <p id="parrafo">
+                        Ingresa el texto que deseas encriptar o desencriptar
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         

@@ -1,13 +1,13 @@
 
 function encriptarTexto() {
-    let textUsuario = document.getElementById('textUsuario').value;
-    asignarTextoElemento('#textResult', cifrar(textUsuario, 5));
+    let textUsuario = document.getElementById('texto').value;
+    asignarTextoElemento('#parrafo', cifrar(textUsuario, 5));
     console.log(cifrar(textUsuario, 5));
 }
 
 function desencriptarTexto() {
-    let textUsuario = document.getElementById('textUsuario').value;
-    asignarTextoElemento('#textResult', descifrar(textUsuario, 5));
+    let textUsuario = document.getElementById('texto').value;
+    asignarTextoElemento('#parrafo', descifrar(textUsuario, 5));
     console.log(descifrar(textUsuario, 5));
 }
 
